@@ -40,12 +40,12 @@ function main() {
 		for(var j = 0; j < 4; j++){
 			field[i][j] = 1;
 			grid[i][j] = [];
-			grid[i][j][0] = Math.trunc(i * size + padding);
-			grid[i][j][1] = Math.trunc(j * size + padding);
-			grid[i][j][2] = Math.trunc(size - 2 * padding);
-			grid[i][j][3] = Math.trunc(size - 2 * padding);
-			grid[i][j][4] = Math.trunc((i + 0.35) * size);
-			grid[i][j][5] = Math.trunc((j + 0.55) * size);
+			grid[i][j][0] = Math.ceil(i * size + padding);
+			grid[i][j][1] = Math.ceil(j * size + padding);
+			grid[i][j][2] = Math.ceil(size - 2 * padding);
+			grid[i][j][3] = Math.ceil(size - 2 * padding);
+			grid[i][j][4] = Math.ceil((i + 0.35) * size);
+			grid[i][j][5] = Math.ceil((j + 0.55) * size);
 		}
 	}
 	printField();
