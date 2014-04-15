@@ -16,8 +16,8 @@ function main() {
 	document.body.style.background = '#ccf';
 	context = div.getContext('2d');
 	context.font = "bold " + Math.ceil(size/5).toString() + "px Arial";
-	div.ontouchstart = touchStart;
-	div.ontouchend = touchEnd;
+	document.ontouchstart = touchStart;
+	document.ontouchend = touchEnd;
 	document.onkeydown = keyPress;
 	color = {
 		0: "#fff",
